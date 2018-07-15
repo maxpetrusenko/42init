@@ -1,0 +1,10 @@
+ls -lS $1
+
+#if [ -d "$1" ]; then
+#	ls -lSh "$1"
+#else 
+#	echo "No argument"
+#fi
+#
+#
+#

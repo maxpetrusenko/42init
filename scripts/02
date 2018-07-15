@@ -1,0 +1,10 @@
+echo '=========================UPDATE========================="
+
+echo 'apt-get update >> /var/log/update_script.log >> ~/apt_update.sh'
+echo 'apt-get dist-upgrade >> var/log/update_script.log >> ~/apt_update.sh'
+echo '0 4 * * 1 sh ~apt_update.sh' >> etc/crontab
+
+echo '=========================DONE=========================='
+
+
+

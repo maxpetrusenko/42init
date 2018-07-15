@@ -1,0 +1,8 @@
+Server:		10.51.1.253
+Address:	10.51.1.253#53
+
+81.1.51.10.in-addr.arpa	name = dpm-master.42.us.org.
+
+#nslookup 10.51.1.81
+#dig -x 10.51.1.81 +short
+#traceroute 10.51.1.81.

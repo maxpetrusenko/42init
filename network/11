@@ -1,0 +1,5 @@
+the name and IP of the network device that link my local network to the outside
+are respectively nat (10.90.1.11) 
+NAT means "network address translation". This is what a router does to communicate machines that have
+non-unique IP addresses with the rest of the Internet.
+Also local addresses become global after this link

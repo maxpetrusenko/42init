@@ -1,0 +1,4 @@
+#Find the provider of slash16.org
+
+# dig  dig  "slash16.org +short" and then use command "whois' on any of the addresses
+# OrgName:        Amazon Technologies Inc.

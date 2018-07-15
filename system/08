@@ -1,0 +1,4 @@
+Run ssh-keygen(1) on your machine, and just hit enter when asked for a password. 
+cat ~/.ssh/id_rsa
+or
+cat ~/.ssh/authorized_keys

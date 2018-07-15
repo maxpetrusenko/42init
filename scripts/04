@@ -1,0 +1,19 @@
+#!/bin/bash
+# add the following script to your cron table (crontab)
+# using "0 0 * * * root /path/to/script >> /etc/crontab"
+# Also, in order to do this exercise, you need to install mailutils
+# using "apt-get install mailutils"
+# and dont forget to create txt files
+
+echo "00 0 * * * /root/04" >> /etc/crontab
+
+sum1=$(cat /root/crontabsum)
+sum2=$(md5sum /etc/crontab | cut -d " " -f 1)
+
+if [ "sum1 != sum2" ]
+then
+	md5sum /root/tmp.txt | cut -d " " -f 1 > /root/crontabsum
+	echo "crontab changed" | mail -s "crontab changed" root@localhost > /root/mail.txt
+fi
+
+
